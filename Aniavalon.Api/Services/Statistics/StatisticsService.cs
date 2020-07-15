@@ -1,4 +1,5 @@
 using System;
+using Aniavalon.Api.ApiModels;
 using Aniavalon.Api.DAL;
 using Aniavalon.Api.Models.Database;
 
@@ -13,11 +14,13 @@ namespace Aniavalon.Api.Services.Statistics
             _context = context;
         }
         
-        public void AddEntry(int personId, int sideId, int playerCount)
+        public void AddEntry(AddEntryRequest request)
         {
-            if (personId == 0)
+            if (request.PersonId == 0 
+                || request.SideId == 0
+                || request.PlayerCount == 0)
             {
-                throw new InvalidOperationException("PersonId cannot be zero or null");
+                throw new InvalidOperationException("No argument can be zero or null");
             }
 
             _context.Database.EnsureCreated();
@@ -27,9 +30,9 @@ namespace Aniavalon.Api.Services.Statistics
             _context.PersonXSides.Add(new PersonXSide
             {
                 CreateDate = DateTime.Now,
-                PersonId = personId,
-                SideId = sideId,
-                PlayerCount = playerCount
+                PersonId = request.PersonId,
+                SideId = request.SideId,
+                PlayerCount = request.PlayerCount
             });
 
             _context.SaveChanges();

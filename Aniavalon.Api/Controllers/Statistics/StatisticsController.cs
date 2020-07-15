@@ -1,5 +1,6 @@
 using System;
 using System.Net;
+using Aniavalon.Api.ApiModels;
 using Aniavalon.Api.Services.Statistics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -7,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace Aniavalon.Api.Controllers.Statistics
 {
     [ApiController]
-    [Route("[statistics]")]
+    [Route("api/[controller]")]
     public class StatisticsController : ControllerBase
     {
         private readonly ILogger<StatisticsController> _logger;
@@ -23,11 +24,11 @@ namespace Aniavalon.Api.Controllers.Statistics
 
         [HttpPost]
         [Route("AddEntry")]
-        public ActionResult AddEntry(int personId, int sideId, int playerCount)
+        public ActionResult AddEntry(AddEntryRequest request)
         {
             try
             {
-                _statisticsService.AddEntry(personId, sideId, playerCount);
+                _statisticsService.AddEntry(request);
             }
             catch (Exception ex)
             {
