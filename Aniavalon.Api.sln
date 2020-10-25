@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aniavalon.Api", "Aniavalon.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aniavalon.Api.User", "Aniavalon.Api.User\Aniavalon.Api.User.csproj", "{B3AB2366-A834-4881-AB88-07F70406742E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aniavalon.Api.Avalon", "Aniavalon.Api.Avalon\Aniavalon.Api.Avalon.csproj", "{9C4C1F3B-B3A5-41FD-A9ED-70726CC4815A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{B3AB2366-A834-4881-AB88-07F70406742E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3AB2366-A834-4881-AB88-07F70406742E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3AB2366-A834-4881-AB88-07F70406742E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4C1F3B-B3A5-41FD-A9ED-70726CC4815A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4C1F3B-B3A5-41FD-A9ED-70726CC4815A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4C1F3B-B3A5-41FD-A9ED-70726CC4815A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4C1F3B-B3A5-41FD-A9ED-70726CC4815A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
