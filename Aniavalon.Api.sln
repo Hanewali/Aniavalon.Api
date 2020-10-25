@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aniavalon.Api", "Aniavalon.Api\Aniavalon.Api.csproj", "{2DF602D0-9446-454B-9903-AA36FB75E73C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aniavalon.Api.User", "Aniavalon.Api.User\Aniavalon.Api.User.csproj", "{B3AB2366-A834-4881-AB88-07F70406742E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{2DF602D0-9446-454B-9903-AA36FB75E73C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DF602D0-9446-454B-9903-AA36FB75E73C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DF602D0-9446-454B-9903-AA36FB75E73C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AB2366-A834-4881-AB88-07F70406742E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AB2366-A834-4881-AB88-07F70406742E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AB2366-A834-4881-AB88-07F70406742E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AB2366-A834-4881-AB88-07F70406742E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
